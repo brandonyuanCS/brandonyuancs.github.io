@@ -21,7 +21,7 @@ function Home () {
             <a target="_blank" rel="noopener noreferrer" href="https://github.com/brandonyuanCS">
               <GitHubButton />
             </a>
-            <a target="_blank" rel="noopener noreferrer" href="/brandonyuan/resume.pdf">
+            <a target="_blank" rel="noopener noreferrer" href="/resume.pdf">
               <ResumeButton />
             </a>
             <a target="_blank" rel="noopener noreferrer" href="mailto:brandonyuan05@gmail.com">
