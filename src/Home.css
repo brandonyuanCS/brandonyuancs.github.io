@@ -1,0 +1,52 @@
+body {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 100vh;
+  margin: auto;
+}
+
+a {
+  color: rgb(26, 87, 143)
+}
+
+h1 {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #213547;
+}
+
+h3 {
+  color: #213547;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 1px;
+}
+
+ul, p {
+  color: black;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: normal;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.custom-list {
+  list-style-type: none; /* Remove default bullet points */
+  padding-left: 0;       /* Remove left padding */
+}
+
+.custom-list li {
+  position: relative;
+  padding-left: 2em; /* Space for emoji bullet */
+  margin-bottom: 0.5rem;
+}
+
+.custom-list li::before {
+  content: attr(data-emoji); /* Insert emoji from data attribute */
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1em; /* Adjust emoji size as needed */
+}
+
