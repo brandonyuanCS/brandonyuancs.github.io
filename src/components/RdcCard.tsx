@@ -3,10 +3,10 @@ import { Group, Card, Image, Text, Badge, Button, Box} from '@mantine/core';
 export default function RdcCard() {
   return (
     <>
-      <Card shadow="xl" padding="lg" radius="md" h="100%">
+      <Card shadow="xl" padding="lg" radius="lg" h="100%">
         <Card.Section>
         <Image
-          src="nwc.png"
+          src="rdc.jpg"
           alt="Read Dead Convolution Image"
           height={160}
         />
@@ -27,7 +27,7 @@ export default function RdcCard() {
           </Text>
         </Box>
 
-        <Button variant='default' color="white" fullWidth mt="md" radius="lg">
+        <Button variant='default' color="white" fullWidth mt="md" radius="lg" component="a" href="https://github.com/brandonyuanCS/red-dead-convolution" target="_blank">
           View Github
         </Button>
       </Card>

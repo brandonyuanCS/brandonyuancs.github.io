@@ -6,7 +6,7 @@ export default function NwcCard() {
       <Card 
         shadow="xl" 
         padding="lg" 
-        radius="md" 
+        radius="lg" 
         h="100%" 
         style={{ display: 'flex', flexDirection: 'column' }}
       >
@@ -34,7 +34,7 @@ export default function NwcCard() {
           </Text>
         </Box>
 
-        <Button variant='default' color="white" fullWidth mt="md" radius="lg">
+        <Button variant='default' color="white" fullWidth mt="md" radius="lg" component="a" href="https://github.com/aggie-coding-club/notes-with-canvas" target="_blank">
           View Github
         </Button>
       </Card>
