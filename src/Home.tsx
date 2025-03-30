@@ -16,9 +16,6 @@ function Home() {
     <>
       {/* Header + Picture*/}
       <Container size="60rem" style={{ marginTop: '10rem' }}>
-        
-        
-        
         <div
           style={{
             display: 'flex',
@@ -28,45 +25,37 @@ function Home() {
           }}
         >
           <div style={{ width: '35rem' }}>
-            <h1 style={{ marginTop: 0, marginBottom: 0 }}>hi, i'm brandon yuan!</h1>
+            <h1 style={{ marginTop: 0, marginBottom: 0}}>hi, i'm brandon yuan!</h1>
 
-            <ul className="custom-list">
-              <li data-emoji="🏫">I'm a CS student @ Texas A&M</li>
-              <li data-emoji="🤖">Interested in fullstack development, project management, & data science.</li>
-              <li data-emoji="💻">Lover of programming & passionate about learning</li>
-              <li data-emoji="💼">And looking for a 2025 summer internship!</li>
-            </ul>
+            <p>
+              I'm a CS student @
+              <a className='link' href="https://engineering.tamu.edu/cse/index.html" target='_blank'>Texas A&M</a>
+              &nbsp;with a passion for full stack development, design, and data analysis. 
+              Aspiring software engineer - and lover of basketball, classical piano, cooking, and cats.
+              This summer, I'll be working @
+              <a className='link' href="https://www.digicert.com/" target='_blank'>DigiCert</a>
+              &nbsp;as a Product Innovation Intern.
+            </p>
 
-
-
-            <h2 style={{ marginTop: "2.7rem" }}>
-              <Group gap="xs" style={{ marginTop: "-1.5rem" }}>
-                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/brandonyuann/">
-                  <LinkedInButton />
-                </a>
-                <a target="_blank" rel="noopener noreferrer" href="https://github.com/brandonyuanCS">
-                  <GitHubButton />
-                </a>
-                <a target="_blank" rel="noopener noreferrer" href="/resume.pdf">
-                  <ResumeButton />
-                </a>
-                <a target="_blank" rel="noopener noreferrer" href="mailto:brandonyuan05@gmail.com">
-                  <EmailButton />
-                </a>
-              </Group>
-            </h2>
+            <Group gap="xs" >
+              <LinkedInButton/>
+              <GitHubButton/>
+              <ResumeButton/>
+              <EmailButton/>
+            </Group>
+            
           </div>
 
-          <div style={{ width: '16rem', display: 'flex', justifyContent: 'center' }}>
-            <img src="pfp.jpg" alt="My picture" style={{ width: '100%', height: '100%', borderRadius: '50%' }} />
-          </div>
+          {/* <div style={{ width: '16rem', display: 'flex', justifyContent: 'center' }}>
+            <img src="pfp.jpg" alt="My picture" style={{ width: '100%', height: '100%', borderRadius: '5%' }} />
+          </div> */}
         </div>
       </Container>
 
-      {/* Current Position */}
+      {/* Currently + Future */}
       <Container size="60rem" style={{ marginTop: '5rem' }}>
-          <h2>I'm currently working as a...</h2>
-          <Grid grow gutter="lg">
+          <h2>Currently, I'm a...</h2>
+          <Grid grow gutter="lg" mb='5rem'>
             <Grid.Col span={6}>
               <Paper radius="lg" bg='rgb(245, 245, 247)' p="lg">
                 <Text fw={700} size='lg'>Research Assistant</Text>

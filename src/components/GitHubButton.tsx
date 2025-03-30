@@ -5,8 +5,9 @@ function GitHubButton() {
   return (
     <> 
       <Button variant="filled" 
-              color="rgba(0, 0, 0, 1)" 
-              size="xs" radius="xl" 
+              color="#000000" 
+              size="xs" 
+              radius="md" 
               leftSection={<div style={{ 
                                       backgroundColor: 'white', 
                                       borderRadius: '50%', 
@@ -17,12 +18,14 @@ function GitHubButton() {
                                       position: 'relative',
                                     }}>
                                       <IconBrandGithub size={18} 
-                                                        color="black" 
-                                                        stroke={1.5} 
-                                                        style={{ position: 'relative', top: '2px'}}/>
-                    </div>}>
-                  GitHub
-      </Button>
+                                                       color="black" 
+                                                       stroke={1.5} 
+                                                       style={{ position: 'relative', top: '2px'}}/>
+                            </div>}
+              component='a'
+              target='_blank'
+              href='https://github.com/brandonyuanCS'
+      > GitHub </Button>
   </>
   );
 }
