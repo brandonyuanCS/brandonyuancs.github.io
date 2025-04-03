@@ -9,7 +9,7 @@ import NwcCard from './components/NwcCard'
 import RdcCard from './components/RdcCard'
 import SvmCard from './components/SvmCard'
 
-import { Group, Container, Grid, Text, Paper } from '@mantine/core';
+import { Group, Container, Grid, Text, Paper, Card, List } from '@mantine/core';
 
 function Home() {
   return (
@@ -103,73 +103,67 @@ function Home() {
 
 
       {/* Skills Section */}
-      <Container size='60rem' style={{marginTop: '15rem'}}>
-        <h2>Skills</h2>
-        
-        <Grid grow h={200}>
-          <Grid.Col span={4}>
-            <Text fw={600}>Frontend</Text>
-            <ul>
-              <li>React.js</li>
-              <li>HTML & CSS</li>
-              <li>TypeScript</li>
-            </ul>
-          </Grid.Col>
-
-          <Grid.Col span={4}>
-            <Text fw={600}>Backend</Text>
-            <ul>
-              <li>Node.js</li>
-              <li>Flask</li>
-              <li>PostgreSQL</li>
-              <li>SQLite</li>
-            </ul>
-          </Grid.Col>
-
-          <Grid.Col span={4}>
-            <Text fw={600}>DevOps</Text>
-            <ul>
-              <li>Docker</li>
-              <li>AWS Lambda</li>
-            </ul>
-          </Grid.Col>
-        </Grid>
-
-        <Grid grow h={200}>
-          <Grid.Col span={4}>
-            <Text fw={600}>Data Science</Text>
-            <ul>
-              <li>PyTorch</li>
-              <li>TensorFlow</li>
-              <li>Sci-kit</li>
-              <li>Convolutional Neural Networks</li>
-              <li>Pandas</li>
-              <li>Matplotlib</li>
-            </ul>
-          </Grid.Col>
-
-          <Grid.Col span={4}>
-            <Text fw={600}>Other Languages</Text>
-            <ul>
-              <li>Python</li>
-              <li>C++</li>
-              <li>Java</li>
-              <li>C#</li>
-            </ul>
-          </Grid.Col>
-
-          <Grid.Col span={4}>
-            <Text fw={600}>Other Tools</Text>
-            <ul>
-              <li>Git</li>
-              <li>Data Visualization</li>
-              <li>Data Structures</li>
-              <li>Project Management</li>
-            </ul>
-          </Grid.Col>
-        </Grid>
-
-      </Container>
+      <Container size="60rem" style={{ marginTop: '15rem' }}>
+      <h2>Skills</h2>
+        <Paper bg='rgb(245, 245, 247)' p='lg' radius="lg"  mb={20}>
+          <Text fw={600} size="xl">Frontend</Text>
+          <List>
+            <List.Item>React.js</List.Item>
+            <List.Item>HTML & CSS</List.Item>
+            <List.Item>TypeScript</List.Item>
+          </List>
+        </Paper>
+      
+        <Paper bg='rgb(245, 245, 247)' p='lg' radius="lg"  mb={20}>
+          <Text fw={600} size="xl">Backend</Text>
+          <List>
+            <List.Item>Node.js</List.Item>
+            <List.Item>Flask</List.Item>
+            <List.Item>PostgreSQL</List.Item>
+            <List.Item>SQLite</List.Item>
+          </List>
+        </Paper>
+      
+        <Paper bg='rgb(245, 245, 247)' p='lg' radius="lg"  mb={20}>
+          <Text fw={600} size="xl">DevOps</Text>
+          <List>
+            <List.Item>Docker</List.Item>
+            <List.Item>AWS Lambda</List.Item>
+          </List>
+        </Paper>
+      
+        <Paper bg='rgb(245, 245, 247)' p='lg' radius="lg"  mb={20}>
+          <Text fw={600} size="xl">Data Science</Text>
+          <List>
+            <List.Item>PyTorch</List.Item>
+            <List.Item>TensorFlow</List.Item>
+            <List.Item>Sci-kit</List.Item>
+            <List.Item>Convolutional Neural Networks</List.Item>
+            <List.Item>Pandas</List.Item>
+            <List.Item>Matplotlib</List.Item>
+          </List>
+        </Paper>
+      
+        <Paper bg='rgb(245, 245, 247)' p='lg' radius="lg"  mb={20}>
+          <Text fw={600} size="xl">Other Languages</Text>
+          <List>
+            <List.Item>Python</List.Item>
+            <List.Item>C++</List.Item>
+            <List.Item>Java</List.Item>
+            <List.Item>C#</List.Item>
+          </List>
+        </Paper>
+      
+        <Paper bg='rgb(245, 245, 247)' p='lg' radius="lg"  mb={20}>
+          <Text fw={600} size="xl">Other Tools</Text>
+          <List>
+            <List.Item>Git</List.Item>
+            <List.Item>Data Visualization</List.Item>
+            <List.Item>Data Structures</List.Item>
+            <List.Item>Project Management</List.Item>
+          </List>
+        </Paper>
+    </Container>
     </>
   );
 }
