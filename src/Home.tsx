@@ -14,7 +14,7 @@ import { Group, Container, Grid, Text, Paper, List } from '@mantine/core';
 function Home() {
   return (
     <>
-      {/* Header + Picture*/}
+      {/* Header + Picture maybe*/}
       <Container size="60rem" style={{ marginTop: '10rem' }}>
         <div
           style={{
