@@ -9,7 +9,7 @@ import NwcCard from './components/NwcCard'
 import RdcCard from './components/RdcCard'
 import SvmCard from './components/SvmCard'
 
-import { Group, Container, Grid, Text, Paper, Card, List } from '@mantine/core';
+import { Group, Container, Grid, Text, Paper, List } from '@mantine/core';
 
 function Home() {
   return (
