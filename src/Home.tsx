@@ -125,20 +125,12 @@ function Home() {
         </Paper>
       
         <Paper bg='rgb(245, 245, 247)' p='lg' radius="lg"  mb={20}>
-          <Text fw={600} size="lg">DevOps</Text>
-          <List>
-            <List.Item>Docker</List.Item>
-            <List.Item>AWS Lambda</List.Item>
-          </List>
-        </Paper>
-      
-        <Paper bg='rgb(245, 245, 247)' p='lg' radius="lg"  mb={20}>
           <Text fw={600} size="lg">Data Science</Text>
           <List>
             <List.Item>PyTorch</List.Item>
             <List.Item>TensorFlow</List.Item>
             <List.Item>Sci-kit</List.Item>
-            <List.Item>Convolutional Neural Networks</List.Item>
+            <List.Item>CNNs</List.Item>
             <List.Item>Pandas</List.Item>
             <List.Item>Matplotlib</List.Item>
           </List>
@@ -158,9 +150,8 @@ function Home() {
           <Text fw={600} size="lg">Other Tools</Text>
           <List>
             <List.Item>Git</List.Item>
-            <List.Item>Data Visualization</List.Item>
-            <List.Item>Data Structures</List.Item>
-            <List.Item>Project Management</List.Item>
+            <List.Item>Agile</List.Item>
+            <List.Item>Docker</List.Item>
           </List>
         </Paper>
       </Container>
