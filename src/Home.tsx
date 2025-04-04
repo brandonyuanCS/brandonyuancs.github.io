@@ -106,7 +106,7 @@ function Home() {
       <Container size="60rem" style={{ marginTop: '15rem' }}>
       <h2>Skills</h2>
         <Paper bg='rgb(245, 245, 247)' p='lg' radius="lg"  mb={20}>
-          <Text fw={600} size="xl">Frontend</Text>
+          <Text fw={600} size="lg">Frontend</Text>
           <List>
             <List.Item>React.js</List.Item>
             <List.Item>HTML & CSS</List.Item>
@@ -115,7 +115,7 @@ function Home() {
         </Paper>
       
         <Paper bg='rgb(245, 245, 247)' p='lg' radius="lg"  mb={20}>
-          <Text fw={600} size="xl">Backend</Text>
+          <Text fw={600} size="lg">Backend</Text>
           <List>
             <List.Item>Node.js</List.Item>
             <List.Item>Flask</List.Item>
@@ -125,7 +125,7 @@ function Home() {
         </Paper>
       
         <Paper bg='rgb(245, 245, 247)' p='lg' radius="lg"  mb={20}>
-          <Text fw={600} size="xl">DevOps</Text>
+          <Text fw={600} size="lg">DevOps</Text>
           <List>
             <List.Item>Docker</List.Item>
             <List.Item>AWS Lambda</List.Item>
@@ -133,7 +133,7 @@ function Home() {
         </Paper>
       
         <Paper bg='rgb(245, 245, 247)' p='lg' radius="lg"  mb={20}>
-          <Text fw={600} size="xl">Data Science</Text>
+          <Text fw={600} size="lg">Data Science</Text>
           <List>
             <List.Item>PyTorch</List.Item>
             <List.Item>TensorFlow</List.Item>
@@ -145,7 +145,7 @@ function Home() {
         </Paper>
       
         <Paper bg='rgb(245, 245, 247)' p='lg' radius="lg"  mb={20}>
-          <Text fw={600} size="xl">Other Languages</Text>
+          <Text fw={600} size="lg">Other Languages</Text>
           <List>
             <List.Item>Python</List.Item>
             <List.Item>C++</List.Item>
@@ -155,7 +155,7 @@ function Home() {
         </Paper>
       
         <Paper bg='rgb(245, 245, 247)' p='lg' radius="lg"  mb={20}>
-          <Text fw={600} size="xl">Other Tools</Text>
+          <Text fw={600} size="lg">Other Tools</Text>
           <List>
             <List.Item>Git</List.Item>
             <List.Item>Data Visualization</List.Item>
@@ -163,7 +163,12 @@ function Home() {
             <List.Item>Project Management</List.Item>
           </List>
         </Paper>
-    </Container>
+      </Container>
+
+      {/* Footer */}
+      <Container size='60rem' style={{ justifyContent: 'center', display: 'flex' }}>
+        <Text size='sm' mb='xl' mt='xl' c='#444444'>made by brandon @ 3:00 AM </Text>
+      </Container>
     </>
   );
 }
