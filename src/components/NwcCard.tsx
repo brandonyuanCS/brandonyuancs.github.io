@@ -28,7 +28,7 @@ export default function NwcCard() {
 
           <Text fw={700} size='lg'>Notes with Canvas</Text>
 
-          <Text size="sm" c="dimmed" mt='xs'>
+          <Text size="sm" mt='xs'>
             A task management web application, featuring a calendar, taskboard, and notes section. Includes integration
             with Canvas to import events from courses. 
           </Text>

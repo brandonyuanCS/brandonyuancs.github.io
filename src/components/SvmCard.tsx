@@ -21,7 +21,7 @@ export default function SvmCard() {
 
           <Text fw={700} size='lg'>Spotify VibeMap 🌱</Text>
 
-          <Text size="sm" c="dimmed" mt='xs'>
+          <Text size="sm" mt='xs'>
             An app that vectorizes song data to provide users with unique insights 
             into their music tastes. Uniquely visualizes listening patterns in a graph-like interface.
           </Text>

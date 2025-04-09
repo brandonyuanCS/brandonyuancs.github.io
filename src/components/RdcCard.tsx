@@ -21,7 +21,7 @@ export default function RdcCard() {
 
           <Text fw={700}  size='lg'>Read Dead Convolution</Text>
 
-          <Text size="sm" c="dimmed" mt='xs'>
+          <Text size="sm" mt='xs'>
             Developed a convolutional neural network to detect wildlife/players in the video game <i>Read 
             Dead Redemption 2</i>. Trained the model with custom in-game screenshots.
           </Text>
