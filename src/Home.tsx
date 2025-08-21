@@ -37,7 +37,7 @@ function Home() {
               <a className='link' href="https://engineering.tamu.edu/cse/index.html" target='_blank'>Texas A&M</a>
               &nbsp;with a passion for full stack development, design, and data analysis. 
               Aspiring software engineer - and lover of basketball, classical piano, cooking, and cats.
-              This summer, I'll be working @
+              This summer, I worked @
               <a className='link' href="https://www.digicert.com/" target='_blank'>DigiCert</a>
               &nbsp;as a Product Innovation Intern.
             </p>
@@ -57,7 +57,7 @@ function Home() {
         </div>
       </Container>
 
-      {/* Currently + Future */}
+      {/* Currently */}
       <Container size="60rem" mt='5rem'>
           <h2>Currently, I'm a...</h2>
           <Grid grow gutter="lg" mb='5rem'>
