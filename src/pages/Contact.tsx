@@ -21,9 +21,9 @@ export default function Contact() {
       message: '',
     },
     validate: {
-      name: (value) => (value.length < 2 ? 'Name must be at least 2 characters' : null),
-      email: (value) => (/^\S+@\S+$/.test(value) ? null : 'Invalid email'),
-      message: (value) => (value.length < 10 ? 'Message must be at least 10 characters' : null),
+      name: (value: string) => (value.length < 2 ? 'Name must be at least 2 characters' : null),
+      email: (value: string) => (/^\S+@\S+$/.test(value) ? null : 'Invalid email'),
+      message: (value: string) => (value.length < 10 ? 'Message must be at least 10 characters' : null),
     },
   });
 
