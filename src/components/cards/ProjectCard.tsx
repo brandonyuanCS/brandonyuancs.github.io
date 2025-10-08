@@ -39,7 +39,7 @@ export default function ProjectCard({
       >
         <div>
           <Text fw={700} size="xl" mb="xs">{title}</Text>
-          <Text size="md">{description}</Text>
+          <Text size="md" fw={500}>{description}</Text>
         </div>
 
         <div className={styles.bottomSection}>

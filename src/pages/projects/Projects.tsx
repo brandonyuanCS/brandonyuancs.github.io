@@ -10,9 +10,9 @@ function Projects() {
       <Group justify='space-between' align='flex-start' style={{ padding: '0 1rem' }}>
         <h1 style={{ margin: 0 }}>projects</h1>
         <Stack gap={4} style={{ fontSize: '0.875rem' }}>
-          <Text size="sm" >🌱 work in progress</Text>
-          <Text size="sm" >🛠️ planned updates</Text>
-          <Text size="sm" >🏆 <a className='tag-link' href="https://www.aggiecodingclub.com/" target='_blank'>ACC⤴</a> award winner</Text>
+          <Text size="sm" fw='500'>🌱 work in progress</Text>
+          <Text size="sm" fw='500'>🛠️ planned updates</Text>
+          <Text size="sm" fw='500'>🏆 <a className='tag-link' href="https://www.aggiecodingclub.com/" target='_blank'>ACC⤴</a> award winner</Text>
         </Stack>
       </Group>
 
