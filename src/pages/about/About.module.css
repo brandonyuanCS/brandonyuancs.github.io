@@ -1,3 +1,14 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .container {
   overflow: hidden;
   padding: 0 1rem;
@@ -6,10 +17,23 @@
 .header {
   margin: 0;
   margin-bottom: 0;
+  animation: fadeInUp 0.3s ease-out;
+}
+
+.intro {
+  animation: fadeInUp 0.3s ease-out 0.1s backwards;
 }
 
 .section {
   margin-top: 2rem;
+}
+
+.section:nth-of-type(1) {
+  animation: fadeInUp 0.3s ease-out 0.2s backwards;
+}
+
+.section:nth-of-type(2) {
+  animation: fadeInUp 0.3s ease-out 0.3s backwards;
 }
 
 /* Force stacking below your custom breakpoint */

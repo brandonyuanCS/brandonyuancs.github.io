@@ -58,9 +58,9 @@ export default function Contact() {
 
   return (
     <div style={{ overflow: 'hidden', padding: '0 1rem' }}>
-      <h1 style={{ margin: 0 }}>contact</h1>
+      <h1 className={styles.header} style={{ margin: 0 }}>contact</h1>
 
-      <Grid mt="2rem" gutter="xl">
+      <Grid mt="2rem" gutter="xl" className={styles.introAndName}>
         <Grid.Col span={{ base: 12, sm: 5 }}>
           <p style={{ marginTop: 0 }}>
             Have any questions for me? Reach out at{' '}
@@ -86,26 +86,30 @@ export default function Contact() {
               {...form.getInputProps('name')}
             />
 
-            <TextInput
-              label="Email"
-              placeholder="your.email@example.com"
-              required
-              variant='filled'
-              mb="md"
-              {...form.getInputProps('email')}
-            />
+            <div className={styles.emailField}>
+              <TextInput
+                label="Email"
+                placeholder="your.email@example.com"
+                required
+                variant='filled'
+                mb="md"
+                {...form.getInputProps('email')}
+              />
+            </div>
 
-            <Textarea
-              label="Message"
-              placeholder="Your message..."
-              required
-              variant='filled'
-              minRows={6}
-              mb="lg"
-              {...form.getInputProps('message')}
-            />
+            <div className={styles.messageField}>
+              <Textarea
+                label="Message"
+                placeholder="Your message..."
+                required
+                variant='filled'
+                minRows={6}
+                mb="lg"
+                {...form.getInputProps('message')}
+              />
+            </div>
 
-            <Group justify="flex-end">
+            <Group justify="flex-end" className={styles.submitButton}>
               <Button
                 className='social-button'
                 type="submit"

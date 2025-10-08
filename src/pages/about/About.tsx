@@ -6,7 +6,7 @@ export default function About() {
     <div className={styles.container}>
       <h1 className={styles.header}>about me</h1>
 
-      <p>
+      <p className={styles.intro}>
         {/* <s style={{ color: 'gray' }}><i>Irvine, CA</i></s> */}
         📍 Austin, TX <br />
         🎓 CS @ Texas A&M <br />
