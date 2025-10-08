@@ -1,0 +1,21 @@
+.container {
+  overflow: hidden;
+  padding: 0 1rem;
+}
+
+.header {
+  margin: 0;
+  margin-bottom: 0;
+}
+
+.section {
+  margin-top: 2rem;
+}
+
+/* Force stacking below your custom breakpoint */
+@media (max-width: 768px) {
+  .section :global(.mantine-Grid-col) {
+    flex-basis: 100% !important;
+    max-width: 100% !important;
+  }
+}

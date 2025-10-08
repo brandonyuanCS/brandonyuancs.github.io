@@ -1,0 +1,35 @@
+.contactForm :global(.mantine-TextInput-input),
+.contactForm :global(.mantine-Textarea-input) {
+  background-color: #f5f5f5;
+  border: none;
+}
+
+.contactForm :global(.mantine-TextInput-input:focus),
+.contactForm :global(.mantine-Textarea-input:focus) {
+  background-color: #e3e3e3;
+  border: none;
+  outline: none;
+}
+
+.contactForm :global(.mantine-TextInput-input:hover),
+.contactForm :global(.mantine-Textarea-input:hover) {
+  border: none;
+}
+
+.contactForm :global(.mantine-TextInput-input::placeholder),
+.contactForm :global(.mantine-Textarea-input::placeholder) {
+  color: #666666;
+  font-family: inherit;
+}
+
+.contactForm :global(.mantine-TextInput-label),
+.contactForm :global(.mantine-Textarea-label) {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.contactForm :global(.mantine-Textarea-input) {
+  background-color: #f5f5f5;
+  border: none;
+  min-height: 10rem; 
+}

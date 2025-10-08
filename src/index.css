@@ -1,10 +1,18 @@
 @import url('https://api.fontshare.com/v2/css?f=satoshi&display=swap');
 
+// GENERAL STYLING RULES: 
+// - typical "background" color -> rgba(0, 0, 0, 0.08)
+// - typical background color on hover -> rgba(0, 0, 0, 0.12)
+
 :root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scrollbar-gutter: stable;
 }
 
 body {

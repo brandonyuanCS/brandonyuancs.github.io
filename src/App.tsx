@@ -5,10 +5,10 @@ import { Notifications } from '@mantine/notifications';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Nav from './components/Nav';
-import Home from './pages/Home';
-import Projects from './pages/Projects';
-import About from './pages/About';
-import Contact from './pages/Contact';
+import Home from './pages/home/Home';
+import Projects from './pages/projects/Projects';
+import About from './pages/about/About';
+import Contact from './pages/contact/Contact';
 
 export default function App() {
   return (

@@ -42,8 +42,8 @@ export default function ProjectCard({
           <Text size="md">{description}</Text>
         </div>
 
-        <Group justify="space-between" align="center">
-          <Group gap="xs">
+        <div className={styles.bottomSection}>
+          <Group gap="xs" className={styles.tagsGroup}>
             {tags.map((tag, index) => (
               <Badge 
                 key={index} 
@@ -61,7 +61,7 @@ export default function ProjectCard({
           <Button 
             variant="light"
             color='black'
-            className='social-button'
+            className={`social-button ${styles.githubButton}`}
             size="xs" 
             radius="md"
             component="a"
@@ -70,7 +70,7 @@ export default function ProjectCard({
           >
             View on GitHub
           </Button>
-        </Group>
+        </div>
       </Stack>
     </div>
   );

@@ -2,17 +2,10 @@ import { TextInput, Textarea, Button, Group, Grid} from '@mantine/core';
 import { useForm } from '@mantine/form';
 import { notifications } from '@mantine/notifications';
 import { useState } from 'react';
+import styles from './Contact.module.css';
 
 export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
-
-  // const testNotification = () => {
-  //   notifications.show({
-  //     title: 'Test notification!',
-  //     message: 'If you can see this, notifications are working!',
-  //     color: 'blue',
-  //   });
-  // };
 
   const form = useForm({
     initialValues: {
@@ -64,11 +57,11 @@ export default function Contact() {
   };
 
   return (
-    <div style={{ overflow: 'hidden' }}>
+    <div style={{ overflow: 'hidden', padding: '0 1rem' }}>
       <h1 style={{ margin: 0 }}>contact</h1>
 
       <Grid mt="2rem" gutter="xl">
-        <Grid.Col span={5}>
+        <Grid.Col span={{ base: 12, sm: 5 }}>
           <p style={{ marginTop: 0 }}>
             Have any questions for me? Reach out at{' '}
             <a className='tag-link' href="mailto:brandonyuan05@gmail.com">
@@ -82,12 +75,13 @@ export default function Contact() {
           </p>
         </Grid.Col>
 
-        <Grid.Col span={7}>
-          <form onSubmit={form.onSubmit(handleSubmit)}>
+        <Grid.Col span={{ base: 12, sm: 7 }}>
+          <form onSubmit={form.onSubmit(handleSubmit)} className={styles.contactForm}>
             <TextInput
               label="Name"
               placeholder="Your name"
               required
+              variant='filled'
               mb="md"
               {...form.getInputProps('name')}
             />
@@ -96,6 +90,7 @@ export default function Contact() {
               label="Email"
               placeholder="your.email@example.com"
               required
+              variant='filled'
               mb="md"
               {...form.getInputProps('email')}
             />
@@ -104,6 +99,7 @@ export default function Contact() {
               label="Message"
               placeholder="Your message..."
               required
+              variant='filled'
               minRows={6}
               mb="lg"
               {...form.getInputProps('message')}

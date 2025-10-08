@@ -1,5 +1,5 @@
 import { Stack, Group, Text } from '@mantine/core';
-import ProjectCard from '../components/cards/ProjectCard';
+import ProjectCard from '../../components/cards/ProjectCard';
 
 // use this: https://mokkify.com/mockups/laptops/85-m1-macbook-pro-mockup
 // get img then zoom to 15% in windows photos editor
@@ -7,7 +7,7 @@ import ProjectCard from '../components/cards/ProjectCard';
 function Projects() {
   return(
     <>
-      <Group justify='space-between' align='flex-start'>
+      <Group justify='space-between' align='flex-start' style={{ padding: '0 1rem' }}>
         <h1 style={{ margin: 0 }}>projects</h1>
         <Stack gap={4} style={{ fontSize: '0.875rem' }}>
           <Text size="sm" >🌱 work in progress</Text>
