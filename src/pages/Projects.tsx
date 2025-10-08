@@ -25,7 +25,7 @@ function Projects() {
                        to production.'
           image='/notes_with_canvas.png'
           tags={['React.js', 'Google Cloud APIs', 'Express.js', 'PostgreSQL']}
-          githubUrl='https://github.com/aggie-coding-club/notes-with-canvas'
+          githubUrl='https://github.com/brandonyuanCS/canvas2calendar'
           imagePosition='left'
         />
         <ProjectCard
