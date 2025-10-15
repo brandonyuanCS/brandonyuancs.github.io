@@ -10,8 +10,6 @@ export default function About() {
         {/* <s style={{ color: 'gray' }}><i>Irvine, CA</i></s> */}
         📍 Austin, TX <br />
         🎓 CS @ Texas A&M <br />
-        👟 (wannabe) runner & pianist <br />
-        🎵 always listening to something
       </p>
       
       <Grid gutter="xl" className={styles.section} align="center">
