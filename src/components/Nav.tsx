@@ -44,7 +44,7 @@ function NavLink({ to, children }: NavLinkProps) {
     <Link 
       to={to}
       style={{ 
-        fontWeight: isActive ? 900 : 500 
+        fontWeight: isActive ? 900 : 500
       }}
     >
       {children}

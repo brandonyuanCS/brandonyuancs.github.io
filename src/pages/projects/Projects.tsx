@@ -5,17 +5,17 @@ import styles from './Projects.module.css';
 function Projects() {
   return(
     <>
-      <Group className={ styles.header } justify='space-between' align='flex-start'>
+      <Group className={`${styles.header} animate-fade-in-up`} justify='space-between' align='flex-start'>
         <h1 style={{ margin: 0 }}>projects</h1>
-        <Stack gap={4} className={styles.legend} style={{ fontSize: '0.875rem' }}>
+        <Stack gap={4} className="text-sm">
           <Text size="sm" fw='500'>🌱 work in progress</Text>
           <Text size="sm" fw='500'>🛠️ planned updates</Text>
           <Text size="sm" fw='500'>🏆 <a className='tag-link' href="https://www.aggiecodingclub.com/" target='_blank'>ACC⤴</a> award winner</Text>
         </Stack>
       </Group>
 
-      <Stack gap='4rem' mt='4rem' className={styles.projectsContainer}>
-        <div className={styles.projectCard}>
+      <Stack gap='4rem' mt='4rem'>
+        <div className="animate-fade-in-up-delay-2">
           <ProjectCard 
             title='Canvas2calendar 🏆 🌱'
             description='A web extension enabling students to customize their Canvas calendar imports. Beats
@@ -28,7 +28,7 @@ function Projects() {
             imagePosition='left'
           />
         </div>
-        <div className={styles.projectCard}>
+        <div className="animate-fade-in-up-delay-3">
           <ProjectCard
             title='Spotify VibeMap 🛠️'
             description="An app to analyze and visualize users' Spotify listening habits through a 3D interactive
@@ -40,7 +40,7 @@ function Projects() {
             imagePosition='right'
           />
         </div>
-        <div className={styles.projectCard}>
+        <div className="animate-fade-in-up-delay-4">
           <ProjectCard 
             title='Red Dead Convolution'
             description='Contributed to a convolutional neural network to classify people/objects in the video game

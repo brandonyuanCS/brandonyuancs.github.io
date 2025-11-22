@@ -4,15 +4,15 @@ import styles from './About.module.css';
 export default function About() {
   return (
     <div className={styles.container}>
-      <h1 className={styles.header}>about me</h1>
+      <h1 className={`${styles.header} animate-fade-in-up`}>about me</h1>
 
-      <p className={styles.intro}>
+      <p className="animate-fade-in-up-delay-1">
         {/* <s style={{ color: 'gray' }}><i>Irvine, CA</i></s> */}
         📍 Austin, TX <br />
         🎓 CS @ Texas A&M <br />
       </p>
       
-      <Grid gutter="xl" className={styles.section} align="center">
+      <Grid gutter="xl" className={`${styles.section} animate-fade-in-up-delay-2`} align="center">
         <Grid.Col span={{ base: 12, sm: 7 }}>
           <h2>education & work</h2>
           <p>
@@ -23,7 +23,7 @@ export default function About() {
           </p>
         </Grid.Col>
         <Grid.Col span={{ base: 12, sm: 5 }}>
-          <div className="about-card">
+          <div className={styles.aboutCard}>
             <h3>current goals</h3>
             <p>
               📅 finish & deploy Canvas2calendar <br />
@@ -35,9 +35,9 @@ export default function About() {
         </Grid.Col>
       </Grid>
 
-      <Grid gutter="xl" className={styles.section} align="center">
+      <Grid gutter="xl" className={`${styles.section} animate-fade-in-up-delay-3`} align="center">
         <Grid.Col span={{ base: 12, sm: 5 }} order={{ base: 2, sm: 1 }}>
-          <div className="about-card">
+          <div className={styles.aboutCard}>
             <h3>side quests</h3>
             <p>
               🏃‍➡️ run a 10k <br />

@@ -9,6 +9,17 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+  /* Typography tokens */
+  --font-size-h1: 3rem;
+  --font-size-nav-logo: 1.25rem;
+  --font-size-body-sm: 0.875rem;
+  --font-size-body-md: 0.95rem;
+  --font-size-body-base: 1rem;
+  --font-weight-normal: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 900;
 }
 
 html {
@@ -107,24 +118,77 @@ a.nav-logo:after {
   background-color: #1e1e1e !important; 
 }
 
-/* pages/About.css */
-.about-card {
-  background-color: rgba(0, 0, 0, 0.04);
-  padding: 1.5rem;
-  border-radius: 12px;
-  transition: background-color 0.3s ease;
+/* Shared animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.about-card:hover {
-  background-color: rgba(0, 0, 0, 0.08);
+/* Animation utility classes */
+.animate-fade-in-up {
+  animation: fadeInUp 0.3s ease-out;
 }
 
-.about-card h3 {
-  margin-top: 0;
-  margin-bottom: 1rem;
+.animate-fade-in-up-delay-1 {
+  animation: fadeInUp 0.3s ease-out 0.1s backwards;
 }
 
-.about-card p {
-  margin-bottom: 0.5rem;
-  font-size: 0.95rem;
+.animate-fade-in-up-delay-2 {
+  animation: fadeInUp 0.3s ease-out 0.2s backwards;
 }
+
+.animate-fade-in-up-delay-3 {
+  animation: fadeInUp 0.3s ease-out 0.3s backwards;
+}
+
+.animate-fade-in-up-delay-4 {
+  animation: fadeInUp 0.3s ease-out 0.4s backwards;
+}
+
+.animate-fade-in-up-delay-5 {
+  animation: fadeInUp 0.3s ease-out 0.5s backwards;
+}
+
+.animate-fade-in-up-delay-6 {
+  animation: fadeInUp 0.3s ease-out 0.6s backwards;
+}
+
+.animate-fade-in-up-delay-7 {
+  animation: fadeInUp 0.3s ease-out 0.7s backwards;
+}
+
+/* Typography utility classes */
+.text-sm {
+  font-size: var(--font-size-body-sm);
+}
+
+.text-md {
+  font-size: var(--font-size-body-md);
+}
+
+.text-base {
+  font-size: var(--font-size-body-base);
+}
+
+.font-medium {
+  font-weight: var(--font-weight-normal);
+}
+
+.font-semibold {
+  font-weight: var(--font-weight-semibold);
+}
+
+.font-bold {
+  font-weight: var(--font-weight-bold);
+}
+
+.font-extrabold {
+  font-weight: var(--font-weight-extrabold);
+}
+

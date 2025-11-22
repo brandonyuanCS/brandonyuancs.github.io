@@ -58,9 +58,9 @@ export default function Contact() {
 
   return (
     <div style={{ overflow: 'hidden', padding: '0 1rem' }}>
-      <h1 className={styles.header} style={{ margin: 0 }}>contact</h1>
+      <h1 className="animate-fade-in-up" style={{ margin: 0 }}>contact</h1>
 
-      <Grid mt="2rem" gutter="xl" className={styles.introAndName}>
+      <Grid mt="2rem" gutter="xl" className="animate-fade-in-up-delay-1">
         <Grid.Col span={{ base: 12, sm: 5 }}>
           <p style={{ marginTop: 0 }}>
             Have any questions for me? Reach out at{' '}
@@ -86,7 +86,7 @@ export default function Contact() {
               {...form.getInputProps('name')}
             />
 
-            <div className={styles.emailField}>
+            <div className="animate-fade-in-up-delay-2">
               <TextInput
                 label="Email"
                 placeholder="your.email@example.com"
@@ -97,7 +97,7 @@ export default function Contact() {
               />
             </div>
 
-            <div className={styles.messageField}>
+            <div className="animate-fade-in-up-delay-3">
               <Textarea
                 label="Message"
                 placeholder="Your message..."
@@ -109,7 +109,7 @@ export default function Contact() {
               />
             </div>
 
-            <Group justify="flex-end" className={styles.submitButton}>
+            <Group justify="flex-end" className="animate-fade-in-up-delay-4">
               <Button
                 className='social-button'
                 type="submit"
