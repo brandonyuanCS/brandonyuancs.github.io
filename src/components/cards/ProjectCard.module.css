@@ -47,7 +47,7 @@
 
 .bottomSection {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 0.75rem;
 }
 
@@ -57,6 +57,25 @@
 
 .githubButton {
   flex-shrink: 0;
+}
+
+.dropdownTrigger {
+  border-left: 1px solid rgba(0, 0, 0, 0.2) !important;
+}
+
+.menuDropdown {
+  border-radius: 8px;
+}
+
+.menuDropdown a,
+.menuDropdown a:hover,
+.menuDropdown a:focus,
+.menuDropdown a:active {
+  text-decoration: none !important;
+}
+
+.menuDropdown a::after {
+  display: none !important;
 }
 
 /* Mobile layout */

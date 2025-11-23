@@ -2,6 +2,7 @@ import { TextInput, Textarea, Button, Group, Grid} from '@mantine/core';
 import { useForm } from '@mantine/form';
 import { notifications } from '@mantine/notifications';
 import { useState } from 'react';
+import ExternalLink from '../../components/ExternalLink';
 import styles from './Contact.module.css';
 
 export default function Contact() {
@@ -64,13 +65,13 @@ export default function Contact() {
         <Grid.Col span={{ base: 12, sm: 5 }}>
           <p style={{ marginTop: 0 }}>
             Have any questions for me? Reach out at{' '}
-            <a className='tag-link' href="mailto:brandonyuan05@gmail.com">
-              brandonyuan05@gmail.com⤴
-            </a>
+            <ExternalLink href="mailto:brandonyuan05@gmail.com" target="_self">
+              brandonyuan05@gmail.com
+            </ExternalLink>
             {' '}or DM me on{' '}
-            <a className='tag-link' href="https://www.linkedin.com/in/brandonyuann/" target='_blank'>
-              LinkedIn⤴
-            </a>
+            <ExternalLink href="https://www.linkedin.com/in/brandonyuann/">
+              LinkedIn
+            </ExternalLink>
             . You can also send me a message by filling out the form:
           </p>
         </Grid.Col>

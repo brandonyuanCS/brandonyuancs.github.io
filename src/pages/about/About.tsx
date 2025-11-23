@@ -7,7 +7,6 @@ export default function About() {
       <h1 className={`${styles.header} animate-fade-in-up`}>about me</h1>
 
       <p className="animate-fade-in-up-delay-1">
-        {/* <s style={{ color: 'gray' }}><i>Irvine, CA</i></s> */}
         📍 Austin, TX <br />
         🎓 CS @ Texas A&M <br />
       </p>
@@ -25,12 +24,11 @@ export default function About() {
         <Grid.Col span={{ base: 12, sm: 5 }}>
           <div className={styles.aboutCard}>
             <h3>current goals</h3>
-            <p>
-              📅 finish & deploy Canvas2calendar <br />
-              🔍 train malware classifier for class <br />
-              🧑‍💻 get AWS & MongoDB certifications <br />
-              🔥 explore summer 2026 opportunities <br />
-            </p>
+            <ul>
+              <li>finish & deploy Canvas2calendar</li>
+              <li>train malware classifier for class</li>
+              <li>get AWS & MongoDB certifications</li>
+            </ul>
           </div>
         </Grid.Col>
       </Grid>
@@ -39,11 +37,11 @@ export default function About() {
         <Grid.Col span={{ base: 12, sm: 5 }} order={{ base: 2, sm: 1 }}>
           <div className={styles.aboutCard}>
             <h3>side quests</h3>
-            <p>
-              🏃‍➡️ run a 10k <br />
-              📸 get back into photography <br />
-              🍜 learn to make noodles from scratch
-            </p>
+            <ul>
+              <li>run a 10k</li>
+              <li>get back into photography</li>
+              <li>learn to make noodles from scratch</li>
+            </ul>
           </div>
         </Grid.Col>
         <Grid.Col span={{ base: 12, sm: 7 }} order={{ base: 1, sm: 2 }}>

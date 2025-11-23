@@ -1,0 +1,12 @@
+.externalLink {
+  display: inline;
+}
+
+.icon {
+  display: inline-block;
+  vertical-align: baseline;
+  width: 0.85em;
+  height: 0.85em;
+  margin-left: 0.1em;
+}
+

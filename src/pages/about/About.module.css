@@ -33,6 +33,10 @@
   font-size: 0.95rem;
 }
 
+.container ul {
+  padding-left: 1rem;
+}
+
 /* Force stacking below your custom breakpoint */
 @media (max-width: 768px) {
   .section :global(.mantine-Grid-col) {

@@ -1,5 +1,6 @@
 import styles from './ProjectCard.module.css'
-import { Image, Text, Badge, Button, Group, Stack } from '@mantine/core';
+import { Image, Text, Badge, Button, Group, Stack, Menu } from '@mantine/core';
+import { IconWorld, IconBrandGithub, IconChevronDown } from '@tabler/icons-react';
 
 interface ProjectCardProps {
   title: string;
@@ -7,6 +8,7 @@ interface ProjectCardProps {
   image: string;
   tags: string[];
   githubUrl: string;
+  websiteUrl?: string;
   imagePosition?: 'left' | 'right';
 }
 
@@ -16,6 +18,7 @@ export default function ProjectCard({
   image, 
   tags, 
   githubUrl,
+  websiteUrl,
   imagePosition = 'left' 
 }: ProjectCardProps) {
   return (
@@ -39,7 +42,7 @@ export default function ProjectCard({
       >
         <div>
           <Text fw={700} size="xl" mb="xs">{title}</Text>
-          <Text size="md" fw={500}>{description}</Text>
+          <p>{description}</p>
         </div>
 
         <div className={styles.bottomSection}>
@@ -58,18 +61,76 @@ export default function ProjectCard({
             ))}
           </Group>
           
-          <Button 
-            variant="light"
-            color='black'
-            className={`social-button ${styles.githubButton}`}
-            size="xs" 
-            radius="md"
-            component="a"
-            href={githubUrl}
-            target="_blank"
-          >
-            View on GitHub
-          </Button>
+          {websiteUrl ? (
+            <Menu shadow="md" width="auto" position="bottom-end">
+              <Button.Group className={`social-button ${styles.githubButton}`}>
+                <Button
+                  variant="light"
+                  color='black'
+                  size="xs"
+                  radius="md"
+                  component="a"
+                  href={websiteUrl}
+                  target="_blank"
+                  style={{ borderTopRightRadius: 0, borderBottomRightRadius: 0 }}
+                >
+                  View Project
+                </Button>
+                <Menu.Target>
+                  <Button
+                    variant="light"
+                    color='black'
+                    size="xs"
+                    radius="md"
+                    className={styles.dropdownTrigger}
+                    style={{ 
+                      borderTopLeftRadius: 0, 
+                      borderBottomLeftRadius: 0,
+                      paddingLeft: '8px',
+                      paddingRight: '8px',
+                      minWidth: 'auto'
+                    }}
+                  >
+                    <IconChevronDown size={16} />
+                  </Button>
+                </Menu.Target>
+              </Button.Group>
+
+              <Menu.Dropdown className={styles.menuDropdown}>
+                <Menu.Item
+                  leftSection={<IconWorld size={16} />}
+                  component="a"
+                  href={websiteUrl}
+                  target="_blank"
+                  fz="sm"
+                >
+                  Website
+                </Menu.Item>
+                <Menu.Item
+                  leftSection={<IconBrandGithub size={16} />}
+                  component="a"
+                  href={githubUrl}
+                  target="_blank"
+                  fz="sm"
+                >
+                  GitHub
+                </Menu.Item>
+              </Menu.Dropdown>
+            </Menu>
+          ) : (
+            <Button 
+              variant="light"
+              color='black'
+              className={`social-button ${styles.githubButton}`}
+              size="xs" 
+              radius="md"
+              component="a"
+              href={githubUrl}
+              target="_blank"
+            >
+              View Project
+            </Button>
+          )}
         </div>
       </Stack>
     </div>
