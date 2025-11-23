@@ -60,7 +60,7 @@ function Nav() {
       display: 'flex', 
       flexDirection: 'column' 
     }}>
-      <div style={{ flexShrink: 0, marginBottom: '5rem'}}>
+      <div style={{ flexShrink: 0, marginBottom: '5rem', padding: '0 1rem'}}>
         <Group justify="space-between" mt="2rem">
           <NavLogo />
           <Group gap="lg">
@@ -75,7 +75,7 @@ function Nav() {
         <Outlet /> 
       </div>
       
-      <div style={{ flexShrink: 0 }}>
+      <div style={{ flexShrink: 0, padding: '0 1rem' }}>
         <div style={{ justifyContent: 'center', display: 'flex', marginTop: '5rem' }}>
           <Text size='xs' mb='md' c='#444444'>made by brandon @ 3:00 AM </Text>
         </div>
