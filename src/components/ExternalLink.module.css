@@ -1,5 +1,7 @@
 .externalLink {
-  display: inline;
+  display: inline-flex;
+  align-items: baseline;
+  white-space: nowrap;
 }
 
 .icon {
@@ -8,5 +10,6 @@
   width: 0.85em;
   height: 0.85em;
   margin-left: 0.1em;
+  flex-shrink: 0;
 }
 

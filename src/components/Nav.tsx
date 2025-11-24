@@ -55,7 +55,7 @@ function NavLink({ to, children }: NavLinkProps) {
 // Actual Nav.tsx component
 function Nav() {
   return (
-    <Container size="55rem" style={{ 
+    <Container size="50rem" style={{ 
       minHeight: '100vh', 
       display: 'flex', 
       flexDirection: 'column' 
@@ -76,8 +76,9 @@ function Nav() {
       </div>
       
       <div style={{ flexShrink: 0, padding: '0 1rem' }}>
-        <div style={{ justifyContent: 'center', display: 'flex', marginTop: '5rem' }}>
-          <Text size='xs' mb='md' c='#444444'>made by brandon @ 3:00 AM </Text>
+        <div style={{ justifyContent: 'space-between', display: 'flex', marginTop: '5rem' }}>
+          <Text size='xs' mb='md' c='#444444'>made at 3:00 AM </Text>
+          <Text size='xs' mb='md' c='#444444'>© 2025 brandon yuan </Text>
         </div>
       </div>
     </Container>

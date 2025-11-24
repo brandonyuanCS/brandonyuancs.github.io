@@ -9,17 +9,6 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
-  /* Typography tokens */
-  --font-size-h1: 3rem;
-  --font-size-nav-logo: 1.25rem;
-  --font-size-body-sm: 0.875rem;
-  --font-size-body-md: 0.95rem;
-  --font-size-body-base: 1rem;
-  --font-weight-normal: 500;
-  --font-weight-semibold: 600;
-  --font-weight-bold: 700;
-  --font-weight-extrabold: 900;
 }
 
 html {
@@ -39,16 +28,22 @@ h1, h2, h3, p, ul {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
+}
+h2 {
+  font-size: 1.05rem;
+  font-weight: 600
 }
 
 h3 {
-  font-weight: bold;
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 
 p, ul {
   color: #222222;
+  font-size: 0.9rem;
 }
 
 a {
@@ -80,9 +75,10 @@ a.tag-link {
   text-decoration: none;
   font-weight: 600;
   background-color: rgba(0, 0, 0, 0.08); 
-  padding: 1px 2px;
+  padding: 1px 3px;
   border-radius: 4px;
   transition: background-color 0.2s ease;
+  line-height: 1.2;
 }
 
 a.tag-link:hover {
@@ -122,15 +118,38 @@ a.nav-logo:after {
   background-color: #1e1e1e !important; 
 }
 
+/* Override Mantine form inputs to use 0.9rem (buttons handled per-component) */
+.mantine-TextInput-input,
+.mantine-Textarea-input {
+  font-size: 0.9rem !important;
+}
+
+/* Also target labels for consistency */
+.mantine-Input-label,
+.mantine-TextInput-label,
+.mantine-Textarea-label {
+  font-size: 0.9rem !important;
+}
+
+/* Override contact form submit button specifically */
+.contact-submit-button,
+.contact-submit-button.mantine-Button-root,
+button.contact-submit-button,
+.contact-submit-button .mantine-Button-label {
+  font-size: 0.9rem !important;
+}
+
 /* Shared animations */
 @keyframes fadeInUp {
   from {
     opacity: 0;
     transform: translateY(15px);
+    filter: blur(3px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
+    filter: blur(0);
   }
 }
 
@@ -167,32 +186,16 @@ a.nav-logo:after {
   animation: fadeInUp 0.3s ease-out 0.7s backwards;
 }
 
-/* Typography utility classes */
-.text-sm {
-  font-size: var(--font-size-body-sm);
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-.text-md {
-  font-size: var(--font-size-body-md);
-}
-
-.text-base {
-  font-size: var(--font-size-body-base);
-}
-
-.font-medium {
-  font-weight: var(--font-weight-normal);
-}
-
-.font-semibold {
-  font-weight: var(--font-weight-semibold);
-}
-
-.font-bold {
-  font-weight: var(--font-weight-bold);
-}
-
-.font-extrabold {
-  font-weight: var(--font-weight-extrabold);
+.copied-text {
+  animation: fadeIn 0.3s ease-out;
 }
 

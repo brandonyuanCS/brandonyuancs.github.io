@@ -4,6 +4,7 @@
   background-color: #f5f5f5;
   border: none;
   transition: background-color 0.2s ease;
+  font-size: 0.9rem !important;
 }
 
 .contactForm :global(.mantine-TextInput-input:focus),
@@ -26,7 +27,7 @@
 
 .contactForm :global(.mantine-TextInput-label),
 .contactForm :global(.mantine-Textarea-label) {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 500;
 }
 
@@ -34,4 +35,21 @@
   background-color: #f5f5f5;
   border: none;
   min-height: 10rem; 
+}
+
+/* Target button in contact form - multiple selectors for maximum specificity */
+.contactForm :global(.mantine-Button-root),
+.contactForm :global(.social-button),
+.contactForm :global(.contact-submit-button),
+.contactForm :global(button.mantine-Button-root.social-button),
+.contactForm :global(.mantine-Group .mantine-Button-root),
+.contactForm :global(.mantine-Group .social-button) {
+  font-size: 0.9rem !important;
+}
+
+/* Target the button label specifically for the submit button */
+.contactForm :global(.contact-submit-button .mantine-Button-label),
+.contactForm :global(.contact-submit-button),
+:global(.contact-submit-button .mantine-Button-label) {
+  font-size: 0.9rem !important;
 }

@@ -45,6 +45,23 @@
   padding-right: 1.5rem;
 }
 
+.titleRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.titleRow h2 {
+  margin: 0;
+}
+
+.date {
+  color: #666;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
 .bottomSection {
   display: flex;
   align-items: center;

@@ -1,5 +1,5 @@
 import styles from './ProjectCard.module.css'
-import { Image, Text, Badge, Button, Group, Stack, Menu } from '@mantine/core';
+import { Image, Badge, Button, Group, Stack, Menu } from '@mantine/core';
 import { IconWorld, IconBrandGithub, IconChevronDown } from '@tabler/icons-react';
 
 interface ProjectCardProps {
@@ -10,6 +10,7 @@ interface ProjectCardProps {
   githubUrl: string;
   websiteUrl?: string;
   imagePosition?: 'left' | 'right';
+  date: string;
 }
 
 export default function ProjectCard({ 
@@ -19,7 +20,8 @@ export default function ProjectCard({
   tags, 
   githubUrl,
   websiteUrl,
-  imagePosition = 'left' 
+  imagePosition = 'left',
+  date
 }: ProjectCardProps) {
   return (
     <div 
@@ -41,7 +43,10 @@ export default function ProjectCard({
         className={`${styles.content} ${imagePosition === 'left' ? styles.contentLeft : styles.contentRight}`}
       >
         <div>
-          <Text fw={700} size="xl" mb="xs">{title}</Text>
+          <div className={styles.titleRow}>
+            <h2 style={{fontWeight: 700 }}>{title}</h2>
+            <p className={styles.date}>{date}</p>
+          </div>
           <p>{description}</p>
         </div>
 
@@ -55,6 +60,7 @@ export default function ProjectCard({
                 color="black" 
                 size="lg" 
                 radius="sm"
+                style={{ margin: '0 0', padding: '2px 6px' }}
               >
                 {tag}
               </Badge>
@@ -86,8 +92,8 @@ export default function ProjectCard({
                     style={{ 
                       borderTopLeftRadius: 0, 
                       borderBottomLeftRadius: 0,
-                      paddingLeft: '8px',
-                      paddingRight: '8px',
+                      paddingLeft: '4px',
+                      paddingRight: '4px',
                       minWidth: 'auto'
                     }}
                   >

@@ -112,12 +112,13 @@ export default function Contact() {
 
             <Group justify="flex-end" className="animate-fade-in-up-delay-4">
               <Button
-                className='social-button'
+                className='contact-submit-button'
                 type="submit"
                 loading={isSubmitting}
                 variant="filled"
                 color="black"
                 radius="md"
+                size="xs"
               >
                 Send Message
               </Button>
