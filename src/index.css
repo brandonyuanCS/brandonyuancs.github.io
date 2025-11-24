@@ -144,7 +144,7 @@ button.contact-submit-button,
   from {
     opacity: 0;
     transform: translateY(15px);
-    filter: blur(3px);
+    filter: blur(5px);
   }
   to {
     opacity: 1;

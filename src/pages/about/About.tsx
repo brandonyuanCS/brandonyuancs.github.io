@@ -15,31 +15,22 @@ export default function About() {
       <Grid gutter="xl" className={`${styles.section} animate-fade-in-up-delay-2`}>
         <Grid.Col span={{ base: 12, sm: 6 }}>
           <p>
-            I'm a 3rd year CS student at TAMU who loves building software that feels 
+            I'm a 3rd year CS student at TAMU who likes building software that feels 
             reliable, intuitive, and just nice to use. I'm doing my best to become a better 
-            developer, one step at a time. 
-          </p>
-          <p>
-            Over this past year, I've spent a ton of time not only studying new technologies,
+            developer, one step at a time. Over this past year, I've spent a ton of time not only studying new technologies,
             but also understanding how to write maintainable software, build systems end-to-end, 
-            and deduce what users/customers actually look for. 
+            and learn what users & customers actually look for.
           </p>
         </Grid.Col>
         <Grid.Col span={{ base: 12, sm: 6 }}>
           <p>
             Outside of programming, I can be found at the gym, the basketball court, or my computer
-            still (sadly). 
-          </p>
-          <p>
-            I've recently started running, but am quite bad at it. 
+            still (sadly). I've recently started running, but am quite bad at it.
           </p>
           <p>
             I like all kinds of music, and I hope to resume playing the trumpet & piano some day. Check
             out my outdated <ExternalLink href='https://www.instagram.com/brandon.trumpet/'>music account</ExternalLink> at
-            your own risk. 
-          </p>
-          <p>
-            I also really enjoy cooking the same 10 things over and over.   
+            your own risk. I also really enjoy cooking the same 10 things over and over.
           </p>
         </Grid.Col>
       </Grid>

@@ -59,7 +59,7 @@ export default function ProjectCard({
                 variant="outline" 
                 color="black" 
                 size="lg" 
-                radius="sm"
+                radius="md"
                 style={{ margin: '0 0', padding: '2px 6px' }}
               >
                 {tag}
