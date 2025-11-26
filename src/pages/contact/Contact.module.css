@@ -27,6 +27,7 @@
 
 .contactForm :global(.mantine-TextInput-label),
 .contactForm :global(.mantine-Textarea-label) {
+  color: #222222;
   font-size: 0.9rem;
   font-weight: 500;
 }

@@ -195,7 +195,19 @@ button.contact-submit-button,
   }
 }
 
-.copied-text {
-  animation: fadeIn 0.3s ease-out;
+@keyframes blurFadeIn {
+  from {
+    opacity: 0;
+    filter: blur(5px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.email-button-text {
+  display: inline-block;
+  animation: blurFadeIn 0.3s ease-out;
 }
 

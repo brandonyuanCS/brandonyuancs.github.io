@@ -34,7 +34,7 @@ export default function EmailButton() {
               leftSection={copied ? null : <IconMailFilled size={18}/>}
               onClick={handleCopy}
               style={{ width: '85px' }}
-      > <span className={copied ? 'copied-text' : ''}>{copied ? 'Copied!' : 'Email'}</span> </Button>
+      > <span key={copied ? 'copied' : 'email'} className="email-button-text">{copied ? 'Copied!' : 'Email'}</span> </Button>
     </>
   );
 }
