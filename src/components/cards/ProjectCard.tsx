@@ -11,20 +11,22 @@ interface ProjectCardProps {
   websiteUrl?: string;
   imagePosition?: 'left' | 'right';
   date: string;
+  isWip?: boolean;
 }
 
-export default function ProjectCard({ 
-  title, 
-  description, 
-  image, 
-  tags, 
+export default function ProjectCard({
+  title,
+  description,
+  image,
+  tags,
   githubUrl,
   websiteUrl,
   imagePosition = 'left',
-  date
+  date,
+  isWip
 }: ProjectCardProps) {
   return (
-    <div 
+    <div
       className={styles.card}
       style={{ flexDirection: imagePosition === 'left' ? 'row' : 'row-reverse' }}
     >
@@ -38,13 +40,20 @@ export default function ProjectCard({
         />
       </div>
 
-      <Stack 
-        justify="space-between" 
+      <Stack
+        justify="space-between"
         className={`${styles.content} ${imagePosition === 'left' ? styles.contentLeft : styles.contentRight}`}
       >
         <div>
           <div className={styles.titleRow}>
-            <h2 style={{fontWeight: 700 }}>{title}</h2>
+            <Group gap="xs">
+              <h2 style={{ fontWeight: 700 }}>{title}</h2>
+              {isWip && (
+                <Badge className={styles.wipBadge} variant="dot" color="green" size="sm" radius="sm">
+                  WIP
+                </Badge>
+              )}
+            </Group>
             <p className={styles.date}>{date}</p>
           </div>
           <p>{description}</p>
@@ -53,12 +62,12 @@ export default function ProjectCard({
         <div className={styles.bottomSection}>
           <Group gap="xs" className={styles.tagsGroup}>
             {tags.map((tag, index) => (
-              <Badge 
-                key={index} 
+              <Badge
+                key={index}
                 tt='none'
-                variant="outline" 
-                color="black" 
-                size="lg" 
+                variant="outline"
+                color="black"
+                size="lg"
                 radius="md"
                 style={{ margin: '0 0', padding: '2px 6px' }}
               >
@@ -66,7 +75,7 @@ export default function ProjectCard({
               </Badge>
             ))}
           </Group>
-          
+
           {websiteUrl ? (
             <Menu shadow="md" width="auto" position="bottom-end">
               <Button.Group className={`social-button ${styles.githubButton}`}>
@@ -89,8 +98,8 @@ export default function ProjectCard({
                     size="xs"
                     radius="md"
                     className={styles.dropdownTrigger}
-                    style={{ 
-                      borderTopLeftRadius: 0, 
+                    style={{
+                      borderTopLeftRadius: 0,
                       borderBottomLeftRadius: 0,
                       paddingLeft: '4px',
                       paddingRight: '4px',
@@ -124,11 +133,11 @@ export default function ProjectCard({
               </Menu.Dropdown>
             </Menu>
           ) : (
-            <Button 
+            <Button
               variant="light"
               color='black'
               className={`social-button ${styles.githubButton}`}
-              size="xs" 
+              size="xs"
               radius="md"
               component="a"
               href={githubUrl}
