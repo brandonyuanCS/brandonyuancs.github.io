@@ -19,11 +19,11 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: 'Canvas2calendar',
+    title: 'Class2calendar',
     description: 'A web extension enabling students to customize their Canvas calendar imports. Beats default ICS parsing by allowing assignment type & class filtering, color-coding, and integration with Google Tasks. Currently being refactored with plans to roll out to production.',
     image: '/canvas2calendar.png',
     tags: ['React.js', 'Google APIs', 'Express.js', 'PostgreSQL'],
-    githubUrl: 'https://github.com/brandonyuanCS/canvas2calendar',
+    githubUrl: 'https://github.com/brandonyuanCS/class2calendar',
     date: '2025',
     isWip: true
   },
