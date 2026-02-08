@@ -19,13 +19,21 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: 'Class2calendar',
-    description: 'A web extension enabling students to customize their Canvas calendar imports. Beats default ICS parsing by allowing assignment type & class filtering, color-coding, and integration with Google Tasks. Currently being refactored with plans to roll out to production.',
+    title: 'class2calendar',
+    description: 'A local-first web extension enabling students to customize their Canvas calendar imports. Beats default ICS parsing by allowing assignment type & class filtering, color-coding, and integration with Google Tasks. Coming to the Chrome Web Store in ~2 months!',
     image: '/canvas2calendar.png',
     tags: ['React.js', 'Google APIs', 'Express.js', 'PostgreSQL'],
     githubUrl: 'https://github.com/brandonyuanCS/class2calendar',
-    date: '2025',
+    date: '2026',
     isWip: true
+  },
+  {
+    title: 'Rerouted',
+    description: 'A platform for airline crew recovery during flight disruptions. It evaluates thousands of scenarios against FAA regulations, via a tabu search optimization engine parallelized on the cloud. Features a real-time dashboard and mobile notifications for airline staff.',
+    image: '/rerouted.png',
+    tags: ['Next.js', 'React Native', 'FastAPI', 'AWS Lambda', 'Ray'],
+    githubUrl: 'https://github.com/brandonyuanCS/rerouted',
+    date: '2026',
   },
   {
     title: 'periph4all',
