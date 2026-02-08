@@ -6,7 +6,7 @@ export default function About() {
   return (
     <div className={styles.container}>
       <h1 className={`${styles.header} animate-fade-in-up`}>about me</h1>
-      <p className="animate-fade-in-up-delay-1" style={{ marginTop: '0rem' }}>
+      <p className="animate-fade-in-up-delay-1" style={{ marginTop: '0.5rem' }}>
         📍 Austin, TX <br />
         🎓 CS @ Texas A&M <br />
       </p>
