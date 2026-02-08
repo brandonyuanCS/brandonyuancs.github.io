@@ -47,7 +47,7 @@ export default function ProjectCard({
         <div>
           <div className={styles.titleRow}>
             <Group gap="xs">
-              <h2 style={{ fontWeight: 700 }}>{title}</h2>
+              <h2 style={{ fontWeight: 600 }}>{title}</h2>
               {isWip && (
                 <Badge className={styles.wipBadge} variant="dot" color="green" size="sm" radius="sm">
                   WIP
@@ -69,7 +69,7 @@ export default function ProjectCard({
                 color="black"
                 size="lg"
                 radius="md"
-                style={{ margin: '0 0', padding: '2px 6px' }}
+                style={{ margin: '0 0', padding: '2px 6px', fontSize: '0.75rem', fontWeight: '500'}}
               >
                 {tag}
               </Badge>

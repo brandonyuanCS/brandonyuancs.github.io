@@ -43,8 +43,10 @@ function NavLink({ to, children }: NavLinkProps) {
   return (
     <Link 
       to={to}
+      className="nav-link"
       style={{ 
-        fontWeight: isActive ? 900 : 500
+        fontWeight: isActive ? 600 : 400, 
+        color: isActive ? '#000000' : '#333333'
       }}
     >
       {children}
@@ -78,7 +80,7 @@ function Nav() {
       <div style={{ flexShrink: 0, padding: '0 1rem' }}>
         <div style={{ justifyContent: 'space-between', display: 'flex', marginTop: '5rem' }}>
           <Text size='xs' mb='md' c='#444444'>made at 3:00 AM </Text>
-          <Text size='xs' mb='md' c='#444444'>© 2025 brandon yuan </Text>
+          <Text size='xs' mb='md' c='#444444'>© 2026 brandon yuan </Text>
         </div>
       </div>
     </Container>

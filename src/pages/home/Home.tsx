@@ -14,13 +14,16 @@ function Home() {
         <h1 className={`${styles.heading} animate-fade-in-up`}>hi, i'm <span className={styles.name}>brandon yuan</span>!</h1>
         <p className="animate-fade-in-up-delay-1">
           I'm a CS student at <ExternalLink href="https://engineering.tamu.edu/cse/index.html">Texas A&M</ExternalLink>{' '}
-          who is passionate about creating robust and beautiful software. I specialize in full stack development and have experience in ML, 
-          cybersecurity, and design. Currently organizing student-led projects in the <ExternalLink href="https://www.aggiecodingclub.com/">Aggie Coding Club</ExternalLink>{' '}
-          and wrapping up my ML research at the <ExternalLink href="https://www.arch.tamu.edu/cosc/">TAMU COSC</ExternalLink>.
-          Previously at <ExternalLink href="https://www.digicert.com/">DigiCert</ExternalLink> as a Product Intern.
+          who loves building cool things. Primarily experienced in full stack development and infrastructure.
+          Interested in security, ML, and design.
         </p>
-        
-        <Group gap="xs" mt='xl' className="animate-fade-in-up-delay-2">
+        <p className="animate-fade-in-up-delay-2">
+          Last summer, I worked at <ExternalLink href="https://www.digicert.com/">DigiCert</ExternalLink> building image signing pipelines. 
+          Currently, I'm building <ExternalLink href="https://github.com/brandonyuanCS/canvas2calendar">class2calendar</ExternalLink> and organizing student-led 
+          projects in the <ExternalLink href="https://www.aggiecodingclub.com/">Aggie Coding Club</ExternalLink>.
+          This summer, I'll be joining <ExternalLink href="https://www.sailpoint.com/">SailPoint</ExternalLink> on the DevOps and cloud infra team.
+        </p>
+        <Group gap="xs" mt='1.4rem' className="animate-fade-in-up-delay-3">
           <LinkedInButton/>
           <GitHubButton/>
           <ResumeButton/>

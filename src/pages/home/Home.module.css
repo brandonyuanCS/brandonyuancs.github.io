@@ -6,8 +6,11 @@
 
 .heading {
   font-weight: 500;
+  font-family: 'General Sans', sans-serif; /* Explicitly set for heading */
+  margin-bottom: 0.8rem; /* Match spacing to button group */
 }
 
 .name {
-  font-weight: 700;
+  font-weight: 600;
+  font-family: 'General Sans', sans-serif; /* Explicitly set for name */
 }
