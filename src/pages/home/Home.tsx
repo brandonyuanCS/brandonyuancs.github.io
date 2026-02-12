@@ -21,7 +21,7 @@ function Home() {
           Last summer, I worked at <ExternalLink href="https://www.digicert.com/">DigiCert</ExternalLink> building image signing pipelines. 
           Currently, I'm building <ExternalLink href="https://github.com/brandonyuanCS/canvas2calendar">class2calendar</ExternalLink> and organizing student-led 
           projects in the <ExternalLink href="https://www.aggiecodingclub.com/">Aggie Coding Club</ExternalLink>.
-          This summer, I'll be joining <ExternalLink href="https://www.sailpoint.com/">SailPoint</ExternalLink> on the DevOps and cloud infra team.
+          {/* This summer, I'll be joining <ExternalLink href="https://www.sailpoint.com/">SailPoint</ExternalLink> on the DevOps and cloud infra team. */}
         </p>
         <Group gap="xs" mt='1.4rem' className="animate-fade-in-up-delay-3">
           <LinkedInButton/>
